@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h3>The Library</h3>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+        </ul>
+      </div>
+      <dialog>
+        <h1>Enter the details</h1>
+        <form action="/submit" method="post" id="bookForm">
+          <div>
+            <label for="bookName">Book Name:</label>
+            <input type="text" id="bookName" name="bookName" required>
+          </div>
+          <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+          </div>
+          <div>
+            <label for="pages">Pages:</label>
+            <input type="number" id="pages" name="pages" required>
+          </div>
+          <div>
+            <label for="statusRead">Have you read this book?</label>
+            <input type="checkbox" id="statusRead" name="statusRead" value="Read">
+            <label for="statusRead">Yes / No</label>
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+        <button autofocus>Close</button>
+      </dialog>
+      <div class="addBookButton">
+        <button>+ Add Book</button>
+      </div>
+      <div class="objects"></div>
+    </div>
+    <output></output>
+    <script src="main.js"></script>
+  </body>
+</html>
