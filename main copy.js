@@ -1,22 +1,16 @@
-
 const myLibrary = []
 const Objects = document.querySelector('.objects')
 
-
-class Book{
-    constructor(title, author, pages, read){
-        this.title = title
-        this.author = author
-        this.pages = pages
-        this.read = read
-        
-    }
-    info () {
+function Book(title, author, pages, read) {
+    this.title = title
+    this.author = author
+    this.pages = pages
+    this.read = read
+    this.info = () => {
         return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
     }
-
 }
- 
+
 function addToLibrary(title, author, pages, read) {
     const newBook = new Book(title, author, pages, read)
     myLibrary.push(newBook)
